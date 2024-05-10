@@ -1,0 +1,28 @@
+source /root/miniconda3/bin/activate
+
+
+wslpath 'C:\Users\lsh2202865\Documents\covid\fasta'
+
+cd 
+
+cat gisaid_hcov-19_2024_04_23_23* > sample.fasta
+
+cat GCF_009858895.2_ASM985889v3_genomic.fna sample.fasta > sample2.fasta
+
+grep '>' sample2.fasta
+
+
+sed -E 's/^>[^\/]+\/([A-Za-z]+)\/[A-Za-z0-9_-]+\/([0-9]{4})\|.*\|([0-9]{4})-([0-9]{2})-([0-9]{2})$/>\1_\2_\4_\5/' sample.fasta > new_file.fasta
+
+awk '/^>/ {gsub(/^>|\n/, ""); country=substr($0, 1, index($0, "_") - 1); date=substr($0, index($0, "_") + 1); count[country]++; printf ">%s%d_%s\n", country, count[country], date; next} 1' new_file.fasta > new_file2.fasta
+
+sed -E '1 s/^>.*/>China1_2019_12_12/' GCF_009858895.2_ASM985889v3_genomic.fna > ref.fasta
+
+cat new_file2.fasta ref.fasta > sample2.fasta
+
+grep '>' sample2.fasta
+
+
+muscle -in sample2.fasta -out sample_aligment.fasta
+
+iqtree -s sample_aligment.fasta -m MFP -bb 1000 -redo
