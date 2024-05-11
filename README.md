@@ -2,7 +2,13 @@
 This is the documentation of phylodynamic and transmission dynamics of COVID-19 XBB 1.5 in Indonesia. 
 
 ## Data
-The data were gathered from GISAID. where we filtered variants 'XBB 1.5' and between Oct 2022-Dec 2023. For outside Indonesia, we take the first cases of XBB 1.5. The reference was taken from GenBank, Wuhan Sequence.
+The data were gathered from GISAID. where we filtered variants 'XBB 1.5' and between Oct 2022-Dec 2023. For outside Indonesia, we take the first cases of XBB 1.5. The reference was taken from GenBank, Wuhan Sequence. In this Github the data are consist:
+
+| Data Name       | Description |
+| :--------------| :---------- |
+|`metadata_covid.csv`       |metada of samples |
+|`sample_alignment.constree`        |the consensus tree|
+|`sample_alignment.treefile`           |best-scoring maximum likelihood tree |
 
 ## Method
 
