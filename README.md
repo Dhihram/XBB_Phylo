@@ -13,7 +13,7 @@ The data were gathered from GISAID. where we filtered variants 'XBB 1.5' and bet
 ## Method
 
 ### Alignment
-We using MAFFT in Ubuntu with Linux
+We using MAFFT in Ubuntu with Linux command line
 
 ```{bash}
 mafft -s sample.fasta > sample_alignment.fasta 
