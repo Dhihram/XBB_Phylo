@@ -26,9 +26,21 @@ class(mydna_ss_aligned)
 
 #viz
 library(Biostrings)
+library(ggmsa)
+library(gridExtra)
+devtools::install_github("YuLab-SMU/ggmsa")
 mydna_ss_aligned <- readDNAStringSet("sample_aligment.fasta")
+mydna_ss_aligned <- mydna_ss_aligned[c(1:7,229:235),]
 DNAStringSet(mydna_ss_aligned)
-Biostrings::writeXStringSet(mydna_ss_aligned, 'my_covid_aligment.fasta')
+#Biostrings::writeXStringSet(mydna_ss_aligned, 'my_covid_aligment.fasta')
+ggmsa(mydna_ss_aligned, start = 100, end = 130, char_width = 0.5, seq_name = T,
+      color='Chemistry_NT') + 
+  geom_msaBar()
+ggmsa(mydna_ss_aligned, start = 170, end = 200, char_width = 0.5, seq_name = T,
+           color='Chemistry_NT') + 
+  geom_msaBar()
+a
+b
 ggmsa::ggmsa(mydna_ss_aligned, start=0, end=40, color='Chemistry_NT')
 ggmsa::ggmsa(mydna_ss_aligned,
              start=length(mydna_ss_aligned[[1]])-40,
@@ -174,14 +186,6 @@ mybootsdata
 class(mybootsdata)
 str(mybootsdata@phylo)
 
-#add metadata
-setwd("C:/Users/dhihr/OneDrive - London School of Hygiene and Tropical Medicine/covid/metadata")
-genom <- read.csv('metadata_covid.csv')
-genom$kode <- sub("_.*", "", genom$id)
-genom$Collection.date <- as.Date(genom$Collection.date, format = "%Y-%m-%d")
-sorted_df <- arrange(genom, Collection.date, country, region)
-genom$region <- ifelse(genom$region == "", genom$country, genom$region)
-
 #summarize
 mean(as.numeric(mybootsdata@phylo$node.label), na.rm = T)
 
@@ -213,22 +217,14 @@ myroot <- which(mytree@phylo$tip.label=="China1_2019_12_12")
 mytree@phylo <- phytools::reroot(mytree@phylo, myroot)
 mytree
 
-
-#time scales
-
-sts <- sub(".*?_", "", mybootsdata@phylo$tip.label)
-sts
-
-class(sts)
-sts <- lubridate::as_date(sts)
-class(sts)
-sts
-sts <- lubridate::decimal_date(sts)
-class(sts)
-sts
-
-names(sts) <- mytree@phylo$tip.label
-sts
+#add metadata
+setwd("C:/Users/dhihr/OneDrive - London School of Hygiene and Tropical Medicine/covid/metadata")
+genom <- read.csv('metadata_covid.csv')
+node <- read.csv('metadata_node.csv')
+genom$kode <- sub("_.*", "", genom$id)
+genom$Collection.date <- as.Date(genom$Collection.date, format = "%Y-%m-%d")
+sorted_df <- arrange(genom, Collection.date, country, region)
+genom$region <- ifelse(genom$region == "", genom$country, genom$region)
 
 #alt time scale
 sts <- genom$Collection.date
@@ -242,7 +238,7 @@ sts
 setwd("C:/Users/dhihr/OneDrive - London School of Hygiene and Tropical Medicine/covid/fasta")
 mydna <- ape::read.FASTA('sample_aligment.fasta')
 mylength <- sapply(mydna, length)
-time.data <- treedater::dater(mytree@phylo, sts=sts, s = mylength, searchRoot=TRUE)
+time.data <- treedater::dater(mytree@phylo, sts=sts, s = mylength, clock ="uncorrelated",  searchRoot=TRUE)
 class(time.data)
 time.data
 
@@ -254,6 +250,7 @@ time.tree$edge.length <- time.data$edge.length
 
 split_vector <- strsplit(mytree@phylo$tip.label, "(?<=[A-Za-z])(?=[0-9])|(?<=[0-9])(?=[A-Za-z])", perl = TRUE)
 locations <- sapply(split_vector, `[`, 1)
+
 
 locations.df <- data.frame(label=time.tree$tip.label, locations)
 # Extracting numbers between country and year
@@ -274,7 +271,7 @@ most_recent_date <- max(lubridate::as_date(sub(".*?_", "", time.tree$tip.label))
 
 gg <- ggtree(time.tree, mrsd=most_recent_date, size = 0.25, color = 'black') %<+% locations.df +
   geom_tiplab(aes(label=id), size = 0.7) +
-  geom_tippoint(aes(colour=locations), size = 1.2) +
+  geom_tippoint(aes(colour=locations), size = 0.7) +
   theme_tree2()
 gg2 <- gg + geom_text2(aes(subset=!isTip, label=label),
                 size = 0.5,
@@ -287,7 +284,15 @@ gg + geom_text(aes(label=node), size = 0.4, hjust = 1,
                vjust = -0.5, color = 'darkgreen')
 
 
-ggsave('test3.tiff',dpi=900)
+ggsave('test.tiff',dpi=900)
+
+#extract molecular time
+mol_tim <- data.frame(id = gg$data$label, molecular_time = gg$data$x)
+mol_tim$molecular_time <- as.numeric(mol_tim$molecular_time) 
+genom <- left_join(genom, mol_tim, by = c("label" = "id"))
+genom$molecular_time <- date_decimal(genom$molecular_time)
+genom <- arrange(genom, molecular_time)
+
 
 #animate
 
@@ -321,25 +326,32 @@ gg2 + geom_hilight(node = branch, fill="purple")
 
 #plotly
 
-tree <- mybootsdata@phylo
-id <- tree$tip.label
-p1 <- ggtree(tree)
+id <- time.tree$tip.label
+p1 <- ggtree(time.tree, mrsd=most_recent_date)
 metat <- p1$data %>%
-  dplyr::inner_join(genom, c('label' = 'label'))
+  dplyr::inner_join(genom, c('label' = 'label')) 
+metat <- metat %>% inner_join(node, c('label' = 'id'))
 p2 <- p1 +
   geom_point(data = metat,
              aes(
-               colour = region,
+               colour = country,
                label = id))
-p2 <- p1 +
+p3 <- p1 +
   geom_point(data = metat,
-             aes(colour=region, text=paste('label:', label, 
+             aes(colour=country, text=paste('label:', label, 
                                            "<br>date:", Collection.date,
-                                           '<br>country:', country, 
+                                           '<br>country:', country,
+                                           '<br>region:', region,
                                            '<br>city:', city,
                                            '<br>gender:', Gender,
-                                           '<br>Age:', Patient.age))) +
+                                           '<br>age:', Patient.age,
+                                           '<br>cluster:', cluster))) +
   geom_text(data = metat,
-            aes(label=id), colour="black", size=2, vjust = 0, nudge_y = 0, hjust=0, nudge_x = 0.00009) +
+            aes(label=id), colour="black", size=3, vjust = 0, nudge_y = 0, hjust=0, nudge_x = 0.000009) +
   labs(title = "XBB 1.5 Indonesia")
-plotly::ggplotly(p2, tooltip = "text")
+saveRDS(p3, "C:/Users/dhihr/OneDrive - London School of Hygiene and Tropical Medicine/covid/plot/p3.rds")
+plotly::ggplotly(p3, tooltip = "text")
+
+
+
+
