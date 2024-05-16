@@ -1,0 +1,110 @@
+"","id","infector","cluster","Collection.date","country","region","city","Patient.age","Gender","Patient.status","Last.vaccinated","Lineage","type","Infector.city","molecular_time"
+"1","Indonesia31_2022_11_01","","cluster 01",2022-11-01,"Indonesia","East Java","Surabaya",24,"f","Hospitalized",NA,"XBB.1.5","travel","",2022-10-31
+"2","Indonesia2_2022_11_07","","cluster 02",2022-11-07,"Indonesia","Central Java","Kota Semarang",18,"f","unknown",NA,"XBB.1.5","non-travel","",2022-11-06
+"3","Indonesia1_2022_11_17","Indonesia2_2022_11_07","cluster 02",2022-11-17,"Indonesia","Central Java","Kota Semarang",66,"m","Hospitalized",NA,"XBB.1.5","non-travel","Kota Semarang",2022-11-16
+"4","Indonesia4_2022_11_21","","cluster 03",2022-11-21,"Indonesia","West Java","Bandung Barat",33,"f","unknown",NA,"XBB.1.5","travel","",2022-11-21
+"5","Indonesia14_2022_12_09","Indonesia4_2022_11_21","cluster 03",2022-12-09,"Indonesia","West Java","Depok City",78,"m","unknown",NA,"XBB.1.5","travel","West Bandung ",2022-12-09
+"6","Indonesia11_2022_12_19","Indonesia31_2022_11_01","cluster 01",2022-12-19,"Indonesia","Yogyakarta","Yogyakarta",36,"f","unknown",NA,"XBB.1.5","travel","Surabaya",2022-12-19
+"7","Indonesia90_2022_12_19","","cluster 04",2022-12-19,"Indonesia","West Kalimantan","Pontianak",43,"m","unknown",NA,"XBB.1.5","travel","",2022-12-19
+"8","Indonesia89_2022_12_23","Indonesia31_2022_11_01","cluster 01",2022-12-23,"Indonesia","Yogyakarta","Yogyakarta",36,"m","unknown",NA,"XBB.1.5","travel","Surabaya",2022-12-22
+"9","Indonesia32_2023_01_01","","cluster 05",2023-01-01,"Indonesia","East Java","Surabaya",27,"f","unknown",NA,"XBB.1.5","travel","",2023-01-01
+"10","Indonesia10_2023_01_04","","cluster 06",2023-01-04,"Indonesia","Jakarta","Jakarta",73,"f","unknown",NA,"XBB.1.5","travel","",2023-01-04
+"11","Indonesia9_2023_01_06","Indonesia32_2023_01_01","cluster 05",2023-01-06,"Indonesia","West Java","Bogor",64,"m","unknown",NA,"XBB.1.5","travel","Surabaya",2023-01-06
+"12","Indonesia33_2023_01_06","","cluster 01",2023-01-06,"Indonesia","East Java","Magetan",80,"f","Hospitalized",NA,"XBB.1.5","travel","",2023-01-06
+"13","Indonesia17_2023_01_10","Indonesia13_2023_01_10","cluster 07",2023-01-10,"Indonesia","Jakarta","Jakarta",15,"f","unknown",NA,"XBB.1.5","non-travel","Jakarta",2023-01-10
+"14","Indonesia15_2023_01_10","Indonesia13_2023_01_10","cluster 07",2023-01-10,"Indonesia","Jakarta","Jakarta",53,"f","unknown",NA,"XBB.1.5.24","non-travel","Jakarta",2023-01-10
+"15","Indonesia13_2023_01_10","","cluster 07",2023-01-10,"Indonesia","Jakarta","Jakarta",49,"m","unknown",NA,"XBB.1.5.24","non-travel","",2023-01-10
+"16","Indonesia93_2023_01_12","Indonesia10_2023_01_04","cluster 06",2023-01-12,"Indonesia","Bali","Bali",29,"m","Live",NA,"XBB.1.5","travel","Jakarta",2023-01-12
+"17","Indonesia147_2023_01_17","","cluster 08",2023-01-17,"Indonesia","West Java","Bandung Regency",35,"f","unknown",NA,"XBB.1.5","travel","",2023-01-17
+"18","Indonesia26_2023_01_23","","cluster 09",2023-01-23,"Indonesia","Jakarta","Jakarta",13,"m","unknown",NA,"XBB.1.5 (consensus call)","travel","",2023-01-23
+"19","Indonesia38_2023_01_31","Indonesia90_2022_12_19","cluster 04",2023-01-31,"Indonesia","Jakarta","Jakarta",6,"m","unknown",NA,"XBB.1.5 (consensus call)","travel","Pontianak",2023-01-30
+"20","Indonesia27_2023_02_04","Indonesia147_2023_01_17","cluster 08",2023-02-04,"Indonesia","Jakarta","Jakarta",21,"f","unknown",NA,"XBB.1.5","travel","Bandung Regency",2023-02-04
+"21","Indonesia91_2023_02_05","Indonesia26_2023_01_23","cluster 09",2023-02-05,"Indonesia","Yogyakarta","Yogyakarta",65,"f","unknown",NA,"XBB.1.5 (consensus call)","travel","Jakarta",2023-02-04
+"22","Indonesia148_2023_02_06","","cluster 10",2023-02-06,"Indonesia","West Java","West Bandung Regency",86,"m","Hospitalized",NA,"XBB.1.5 (consensus call)","travel","",2023-02-05
+"23","Indonesia42_2023_02_13","Indonesia148_2023_02_06","cluster 10",2023-02-13,"Indonesia","East Java","Surabaya",0,"f","Recovered (no symptoms)",NA,"XBB.1.5","travel","West Bandung ",2023-02-13
+"24","Indonesia56_2023_02_13","","cluster 11",2023-02-13,"Indonesia","Jakarta","Jakarta",19,"f","unknown",NA,"XBB.1.5 (consensus call)","non-travel","",2023-02-13
+"25","Indonesia44_2023_02_16","Indonesia91_2023_02_05","cluster 09",2023-02-16,"Indonesia","Jakarta","Jakarta",53,"f","unknown",NA,"XBB.1.5.23","non-travel","Yogyakarta",2023-02-15
+"26","Indonesia45_2023_02_17","Indonesia91_2023_02_05","cluster 09",2023-02-17,"Indonesia","Jakarta","Jakarta",34,"f","unknown",NA,"XBB.1.5.23","non-travel","Yogyakarta",2023-02-16
+"27","Indonesia46_2023_02_24","Indonesia56_2023_02_13","cluster 11",2023-02-24,"Indonesia","Jakarta","Jakarta",43,"f","unknown",NA,"XBB.1.5 (consensus call)","non-travel","Jakarta",2023-02-23
+"28","Indonesia50_2023_02_27","","cluster 12",2023-02-27,"Indonesia","Jakarta","Jakarta",40,"m","unknown",NA,"XBB.1.5.43","non-travel","",2023-02-27
+"29","Indonesia52_2023_02_28","Indonesia50_2023_02_27","cluster 12",2023-02-28,"Indonesia","Jakarta","Jakarta",31,"f","unknown",NA,"XBB.1.5","non-travel","Jakarta",2023-02-27
+"30","Indonesia49_2023_03_01","Indonesia47_2023_03_01","cluster 13",2023-03-01,"Indonesia","Jakarta","Jakarta",23,"m","unknown",NA,"XBB.1.5","non-travel","Jakarta",2023-02-28
+"31","Indonesia47_2023_03_01","","cluster 13",2023-03-01,"Indonesia","Jakarta","Jakarta",26,"m","unknown",NA,"XBB.1.5","non-travel","",2023-02-28
+"32","Indonesia60_2023_03_08","Indonesia47_2023_03_01","cluster 13",2023-03-08,"Indonesia","Jakarta","Jakarta",0,"m","unknown",NA,"XBB.1.5","non-travel","Jakarta",2023-03-08
+"33","Indonesia61_2023_03_09","","cluster 14",2023-03-09,"Indonesia","Jakarta","Jakarta",43,"m","unknown",NA,"XBB.1.5.24","non-travel","",2023-03-09
+"34","Indonesia63_2023_03_12","","cluster 15",2023-03-12,"Indonesia","Jakarta","Jakarta",NA,"f","unknown",NA,"XBB.1.5.23","non-travel","",2023-03-11
+"35","Indonesia76_2023_03_14","","cluster 16",2023-03-14,"Indonesia","Jakarta","Jakarta",40,"f","unknown",NA,"XBB.1.5","non-travel","",2023-03-14
+"36","Indonesia65_2023_03_17","Indonesia45_2023_02_17","cluster 17",2023-03-17,"Indonesia","Jakarta","Jakarta",16,"f","unknown",NA,"XBB.1.5.23","non-travel","Jakarta",2023-03-16
+"37","Indonesia70_2023_03_17","","cluster 18",2023-03-17,"Indonesia","Jakarta","Jakarta",22,"f","unknown",NA,"XBB.1.5","non-travel","",2023-03-16
+"38","Indonesia79_2023_03_21","Indonesia63_2023_03_12","cluster 15",2023-03-21,"Indonesia","Jakarta","Jakarta",56,"m","unknown",NA,"XBB.1.5.23","non-travel","Jakarta",2023-03-21
+"39","Indonesia75_2023_03_21","Indonesia128_2023_03_21","cluster 19",2023-03-21,"Indonesia","East Java","Surabaya",68,"m","unknown",NA,"XBB.1.5.24","non-travel","Surabaya",2023-03-21
+"40","Indonesia128_2023_03_21","","cluster 19",2023-03-21,"Indonesia","East Java","Surabaya",46,"f","unknown",NA,"XBB.1.5.24","non-travel","",2023-03-21
+"41","Indonesia81_2023_03_22","Indonesia128_2023_03_21","cluster 19",2023-03-22,"Indonesia","East Java","Surabaya",54,"m","unknown",NA,"XBB.1.5.24","non-travel","Surabaya",2023-03-21
+"42","Indonesia103_2023_03_24","Indonesia61_2023_03_09","cluster 14",2023-03-24,"Indonesia","Jakarta","Jakarta",NA,"f","unknown",NA,"XBB.1.5.24","non-travel","Jakarta",2023-03-23
+"43","Indonesia104_2023_03_24","Indonesia76_2023_03_14","cluster 16",2023-03-24,"Indonesia","Jakarta","Jakarta",17,"m","unknown",NA,"XBB.1.5","non-travel","Jakarta",2023-03-23
+"44","Indonesia73_2023_03_26","Indonesia63_2023_03_12","cluster 15",2023-03-26,"Indonesia","Jakarta","Jakarta",40,"f","unknown",NA,"XBB.1.5.23","non-travel","Jakarta",2023-03-26
+"45","Indonesia106_2023_03_27","Indonesia49_2023_03_01","cluster 13",2023-03-27,"Indonesia","Jakarta","Jakarta",29,"f","unknown",NA,"XBB.1.5","non-travel","Jakarta",2023-03-27
+"46","Indonesia108_2023_03_27","Indonesia83_2023_03_27","cluster 20",2023-03-27,"Indonesia","Jakarta","Jakarta",35,"f","unknown",NA,"XBB.1.5.43","non-travel","Jakarta",2023-03-27
+"47","Indonesia83_2023_03_27","","cluster 20",2023-03-27,"Indonesia","Jakarta","Jakarta",38,"m","unknown",NA,"XBB.1.5.43","non-travel","",2023-03-27
+"48","Indonesia110_2023_03_28","Indonesia70_2023_03_17","cluster 18",2023-03-28,"Indonesia","Jakarta","Jakarta",49,"m","unknown",NA,"XBB.1.5","non-travel","Jakarta",2023-03-27
+"49","Indonesia109_2023_03_28","Indonesia128_2023_03_21","cluster 19",2023-03-28,"Indonesia","East Java","Surabaya",54,"m","unknown",NA,"XBB.1.5.24","non-travel","Surabaya",2023-03-27
+"50","Indonesia111_2023_03_28","","cluster 21",2023-03-28,"Indonesia","Bali","Bali",44,"f","Hospitalized",NA,"XBB.1.5.18","non-travel","",2023-03-27
+"51","Indonesia112_2023_03_29","Indonesia96_2023_03_29","cluster 22",2023-03-29,"Indonesia","Jakarta","Jakarta",60,"f","unknown",NA,"XBB.1.5.23","non-travel","Jakarta",2023-03-28
+"52","Indonesia96_2023_03_29","","cluster 22",2023-03-29,"Indonesia","Jakarta","Jakarta",30,"f","unknown",NA,"XBB.1.5.23","non-travel","",2023-03-28
+"53","Indonesia86_2023_03_29","","cluster 23",2023-03-29,"Indonesia","East Java","Surabaya",41,"f","unknown",NA,"XBB.1.5.24","non-travel","",2023-03-28
+"54","Indonesia114_2023_03_31","Indonesia111_2023_03_28","cluster 21",2023-03-31,"Indonesia","Bali","Bali",44,"f","Hospitalized",NA,"XBB.1.5.18","non-travel","Bali",2023-03-31
+"55","Indonesia98_2023_03_31","Indonesia94_2023_03_31","cluster 24",2023-03-31,"Indonesia","Jakarta","Jakarta",28,"f","unknown",NA,"XBB.1.5","non-travel","Jakarta",2023-03-31
+"56","Indonesia113_2023_03_31","Indonesia97_2023_03_31","cluster 25",2023-03-31,"Indonesia","Jakarta","Jakarta",37,"f","unknown",NA,"XBB.1.5.87","non-travel","Jakarta",2023-03-31
+"57","Indonesia94_2023_03_31","","cluster 24",2023-03-31,"Indonesia","Jakarta","Jakarta",28,"m","unknown",NA,"XBB.1.5","non-travel","",2023-03-31
+"58","Indonesia97_2023_03_31","","cluster 25",2023-03-31,"Indonesia","Jakarta","Jakarta",67,"m","unknown",NA,"XBB.1.5.87","non-travel","",2023-03-31
+"59","Indonesia120_2023_04_01","","cluster 26",2023-04-01,"Indonesia","Jakarta","Jakarta",50,"f","unknown",NA,"XBB.1.5.24","non-travel","",2023-04-01
+"60","Indonesia74_2023_04_02","Indonesia65_2023_03_17","cluster 17",2023-04-02,"Indonesia","Jakarta","Jakarta",31,"m","unknown",NA,"XBB.1.5.23","non-travel","Jakarta",2023-04-02
+"61","Indonesia177_2023_04_03","Indonesia106_2023_03_27","cluster 13",2023-04-03,"Indonesia","Jakarta","Jakarta",73,"f","unknown",NA,"XBB.1.5","non-travel","Jakarta",2023-04-02
+"62","Indonesia171_2023_04_03","","cluster 28",2023-04-03,"Indonesia","West Java","Bandung City",44,"f","unknown",NA,"XBB.1.5.24","travel","",2023-04-02
+"63","Indonesia149_2023_04_03","","cluster 27",2023-04-03,"Indonesia","West Java","Bandung City",50,"f","Deceased",NA,"XBB.1.5.87","non-travel","",2023-04-02
+"64","Indonesia182_2023_04_06","Indonesia171_2023_04_03","cluster 28",2023-04-06,"Indonesia","Jakarta","Jakarta",56,"m","unknown",NA,"XBB.1.5.24","travel","Bandung City",2023-04-06
+"65","Indonesia183_2023_04_06","Indonesia188_2023_04_06","cluster 29",2023-04-06,"Indonesia","Jakarta","Jakarta",22,"f","unknown",NA,"XBB.1.5.43","non-travel","Jakarta",2023-04-06
+"66","Indonesia188_2023_04_06","","cluster 29",2023-04-06,"Indonesia","Jakarta","Jakarta",43,"m","unknown",NA,"XBB.1.5.43","non-travel","",2023-04-06
+"67","Indonesia100_2023_04_08","Indonesia106_2023_03_27","cluster 13",2023-04-08,"Indonesia","Jakarta","Jakarta",3,"m","unknown",NA,"XBB.1.5","non-travel","Jakarta",2023-04-08
+"68","Indonesia131_2023_04_10","Indonesia130_2023_04_10","cluster 30",2023-04-10,"Indonesia","Jakarta","Jakarta",27,"f","unknown",NA,"XBB.1.5.24","non-travel","Jakarta",2023-04-09
+"69","Indonesia130_2023_04_10","","cluster 30",2023-04-10,"Indonesia","Jakarta","Jakarta",30,"m","unknown",NA,"XBB.1.5.24","non-travel","",2023-04-09
+"70","Indonesia124_2023_04_11","Indonesia86_2023_03_29","cluster 23",2023-04-11,"Indonesia","East Java","Surabaya",60,"f","Died",NA,"XBB.1.5.24","non-travel","Surabaya",2023-04-11
+"71","Indonesia118_2023_04_12","Indonesia171_2023_04_03","cluster 28",2023-04-12,"Indonesia","West Java","Bandung City",24,"f","unknown",NA,"XBB.1.5.24","non-travel","Bandung City",2023-04-12
+"72","Indonesia173_2023_04_12","Indonesia120_2023_04_01","cluster 26",2023-04-12,"Indonesia","Jakarta","Jakarta",69,"m","unknown",NA,"XBB.1.5.24","non-travel","Jakarta",2023-04-12
+"73","Indonesia155_2023_04_14","Indonesia171_2023_04_03","cluster 28",2023-04-14,"Indonesia","Jakarta","Jakarta",45,"f","unknown",NA,"XBB.1.5.24","travel","Bandung City",2023-04-13
+"74","Indonesia122_2023_04_15","","cluster 31",2023-04-15,"Indonesia","East Kalimantan","East Kalimantan",22,"m","unknown",NA,"XBB.1.5.87","travel","",2023-04-14
+"75","Indonesia175_2023_04_19","Indonesia127_2023_04_19","cluster 32",2023-04-19,"Indonesia","Jakarta","Jakarta",5,"m","unknown",NA,"GF.1","non-travel","Jakarta",2023-04-19
+"76","Indonesia137_2023_04_19","Indonesia155_2023_04_14","cluster 28",2023-04-19,"Indonesia","West Java","Bandung City",66,"m","unknown",NA,"XBB.1.5.24","travel","Jakarta",2023-04-19
+"77","Indonesia126_2023_04_19","","cluster 33",2023-04-19,"Indonesia","Jakarta","Jakarta",64,"f","unknown",NA,"XBB.1.5.24","non-travel","",2023-04-19
+"78","Indonesia127_2023_04_19","","cluster 32",2023-04-19,"Indonesia","Jakarta","Jakarta",36,"f","unknown",NA,"GF.1","non-travel","",2023-04-19
+"79","Indonesia189_2023_04_20","Indonesia173_2023_04_12","cluster 26",2023-04-20,"Indonesia","Jakarta","Jakarta",33,"m","unknown",NA,"XBB.1.5.24","non-travel","Jakarta",2023-04-19
+"80","Indonesia152_2023_04_20","Indonesia189_2023_04_20","cluster 26",2023-04-20,"Indonesia","Jakarta","Jakarta",39,"f","unknown",NA,"XBB.1.5.24","non-travel","Jakarta",2023-04-19
+"81","Indonesia138_2023_04_21","Indonesia126_2023_04_19","cluster 33",2023-04-21,"Indonesia","Jakarta","Jakarta",58,"f","unknown",NA,"XBB.1.5.24","non-travel","Jakarta",2023-04-20
+"82","Indonesia167_2023_04_25","Indonesia109_2023_03_28","cluster 19",2023-04-25,"Indonesia","East Java","Surabaya",38,"f","unknown",NA,"XBB.1.5.24","non-travel","Surabaya",2023-04-25
+"83","Indonesia135_2023_04_26","Indonesia149_2023_04_03","cluster 27",2023-04-26,"Indonesia","West Java","Bandung City",1,"m","unknown",NA,"XBB.1.5.87","non-travel","Bandung City",2023-04-25
+"84","Indonesia164_2023_04_26","","cluster 34",2023-04-26,"Indonesia","South Kalimantan","Banjar Baru",42,"m","unknown",NA,"XBB.1.5.24","travel","",2023-04-25
+"85","Indonesia201_2023_04_27","Indonesia109_2023_03_28","cluster 19",2023-04-27,"Indonesia","East Java","Surabaya",12,"f","unknown",NA,"XBB.1.5.24","non-travel","Surabaya",2023-04-26
+"86","Indonesia180_2023_04_27","","cluster 35",2023-04-27,"Indonesia","East Java","Surabaya",53,"f","unknown",NA,"XBB.1.5","non-travel","",2023-04-26
+"87","Indonesia140_2023_04_28","Indonesia122_2023_04_15","cluster 31",2023-04-28,"Indonesia","West Java","Bandung City",23,"m","unknown",NA,"XBB.1.5.87","travel","East Kalimantan",2023-04-28
+"88","Indonesia153_2023_04_29","","cluster 36",2023-04-29,"Indonesia","Yogyakarta","Yogyakarta",87,"f","unknown",NA,"XBB.1.5.43","travel","",2023-04-29
+"89","Indonesia145_2023_05_03","Indonesia137_2023_04_19","cluster 28",2023-05-03,"Indonesia","Jakarta","Jakarta",41,"f","unknown",NA,"XBB.1.5.24","travel","Bandung City",2023-05-02
+"90","Indonesia144_2023_05_03","Indonesia137_2023_04_19","cluster 28",2023-05-03,"Indonesia","Jakarta","Jakarta",16,"f","unknown",NA,"XBB.1.5.24","travel","Bandung City",2023-05-02
+"91","Indonesia163_2023_05_08","Indonesia153_2023_04_29","cluster 36",2023-05-08,"Indonesia","Jakarta","Jakarta",25,"f","unknown",NA,"XBB.1.5.43","travel","Yogyakarta",2023-05-07
+"92","Indonesia162_2023_05_09","Indonesia144_2023_05_03","cluster 28",2023-05-09,"Indonesia","Jakarta","Jakarta",63,"f","unknown",NA,"XBB.1.5.24","non-travel","Jakarta",2023-05-08
+"93","Indonesia203_2023_05_09","","cluster 37",2023-05-09,"Indonesia","Jakarta","Jakarta",32,"m","unknown",NA,"GF.1","non-travel","",2023-05-08
+"94","Indonesia221_2023_05_11","","cluster 38",2023-05-11,"Indonesia","West Java","Bandung",36,"m","unknown",NA,"XBB.1.5.87","travel","",2023-05-11
+"95","Indonesia195_2023_05_13","Indonesia124_2023_04_11","cluster 23",2023-05-13,"Indonesia","East Java","Surabaya",76,"m","unknown",NA,"XBB.1.5.24","non-travel","Surabaya",2023-05-12
+"96","Indonesia198_2023_05_15","","cluster 39",2023-05-15,"Indonesia","Jakarta","Jakarta",42,"f","unknown",NA,"XBB.1.5.43","non-travel","",2023-05-14
+"97","Indonesia209_2023_05_18","Indonesia144_2023_05_03","cluster 28",2023-05-18,"Indonesia","Jakarta","Jakarta",44,"f","unknown",NA,"XBB.1.5.24","non-travel","Jakarta",2023-05-17
+"98","Indonesia159_2023_05_20","Indonesia203_2023_05_09","cluster 37",2023-05-20,"Indonesia","Jakarta","Jakarta",3,"f","unknown",NA,"GF.1","non-travel","Jakarta",2023-05-19
+"99","Indonesia217_2023_05_22","Indonesia198_2023_05_15","cluster 39",2023-05-22,"Indonesia","Jakarta","Jakarta",24,"f","unknown",NA,"XBB.1.5.43","non-travel","Jakarta",2023-05-22
+"100","Indonesia218_2023_05_24","Indonesia224_2023_05_24","cluster 40",2023-05-24,"Indonesia","Jakarta","Jakarta",NA,"m","unknown",NA,"XBB.1.5.87","non-travel","Jakarta",2023-05-23
+"101","Indonesia219_2023_05_24","Indonesia180_2023_04_27","cluster 35",2023-05-24,"Indonesia","East Java","Surabaya",22,"f","unknown",NA,"XBB.1.5","non-travel","Surabaya",2023-05-23
+"102","Indonesia224_2023_05_24","","cluster 40",2023-05-24,"Indonesia","Jakarta","Jakarta",21,"f","unknown",NA,"XBB.1.5.87","non-travel","",2023-05-23
+"103","Indonesia205_2023_05_29","Indonesia221_2023_05_11","cluster 38",2023-05-29,"Indonesia","Jakarta","Jakarta",24,"f","unknown",NA,"XBB.1.5.87","travel","Bandung Regency",2023-05-29
+"104","Indonesia226_2023_05_31","Indonesia164_2023_04_26","cluster 34",2023-05-31,"Indonesia","East Java","Surabaya",1,"m","unknown",NA,"XBB.1.5.24","travel","Banjar Baru",2023-05-30
+"105","Indonesia207_2023_06_03","","cluster 41",2023-06-03,"Indonesia","Jakarta","Jakarta",25,"m","unknown",NA,"GF.1","non-travel","",2023-06-03
+"106","Indonesia208_2023_06_07","Indonesia209_2023_05_18","cluster 28",2023-06-07,"Indonesia","Jakarta","Jakarta",75,"m","unknown",NA,"XBB.1.5.24","non-travel","Jakarta",2023-06-07
+"107","Indonesia211_2023_06_14","Indonesia207_2023_06_03","cluster 41",2023-06-14,"Indonesia","Jakarta","Jakarta",30,"m","unknown",NA,"GF.1","non-travel","Jakarta",2023-06-14
+"108","Indonesia21_2023_01_20","Indonesia22_2022_12_12","cluster 42",2023-01-20,"Indonesia","Jakarta","Jakarta",54,"f","unknown",NA,"XBB.1.5","travel","Palembang",2023-01-19
+"109","Indonesia22_2022_12_12","","cluster 42",2022-12-12,"Indonesia","South Sumatra","Palembang",29,"f","unknown",NA,"XBB.1.5","travel","",2022-12-11
